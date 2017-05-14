@@ -1,0 +1,396 @@
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+		<title>youzan</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/protection.css">
+		<style>
+			#container .detail-power a {
+				border-bottom: 2px solid #ee0000;
+				color: #ee0000;
+			}
+			#container .protection-safe h2 {
+				margin-top: 100px;
+				text-align: center;
+				font: 30px/70px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: #333333;
+			}
+			#container .protection-safe h3 {
+				text-align: center;
+				font: 20px/60px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: #666666;
+			}
+			#container .protection-shopping li {
+				float :left;
+				box-sizing: border-box;
+				margin-top: 70px;
+				margin-bottom: 80px;
+				padding-top: 60px;
+				width: 275px;
+				text-align: center;
+				font: 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: #999999;
+			}
+			#container .shopping-seller {
+				background: url(https://img.alicdn.com/imgextra/i2/1036020250/TB2Yb6qgmFjpuFjSspbXXXagVXa_!!1036020250.png) no-repeat center top;
+			}
+			#container .shopping-buyer {
+				background: url(https://img.alicdn.com/imgextra/i1/1036020250/TB2YZYIhrBmpuFjSZFAXXaQ0pXa_!!1036020250.png) no-repeat center top;
+			}
+			#container .shopping-distributor {
+				background: url(https://img.alicdn.com/imgextra/i1/1036020250/TB2T7HBhCFmpuFjSZFrXXayOXXa_!!1036020250.png) no-repeat center top;
+			}
+			#container .shopping-youzan {
+				background: url(https://img.alicdn.com/imgextra/i2/1036020250/TB2LvLAhC0mpuFjSZPiXXbssVXa_!!1036020250.png) no-repeat center top;
+			}
+			#container .protection-shopping img {
+				margin-top: 50px;
+			}
+			#container .protection-safe p {
+				text-align: center;
+				font: 14px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: #666666;
+			}
+			#container .protection-safe p a {
+				color: #80b0ff;
+			}
+			#container .protection-safe ol li {
+				height: 45px;
+				font: 14px/50px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				list-style-type: decimal;
+				color: #2cc75f;
+			}
+			#container .protection-safe ol {
+				width: 750px;
+				height: 315px;
+				margin: 0 auto;
+				background: url(https://img.alicdn.com/imgextra/i2/1036020250/TB2cYqicyC9MuFjSZFoXXbUzFXa_!!1036020250.png) no-repeat;
+				background-size: 750px 315px;
+			}
+			#container .protection-safe ol span {
+				color: #151515;
+			}
+			#container .customer-service {
+				display: block;
+				width: 750px;
+				margin: 0 auto;
+				font: 14px/45px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: #2b90ed;
+			}
+			#container .case-customer {
+				margin-top: 80px;
+			}
+			#container .protection-case li {
+				position: relative;
+				float: left;
+				width: 366px;
+				height: 210px;
+				background: #333;
+				background-size: 366px 210px;
+			}
+			#container .protection-case .case-cover {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: block;
+				box-sizing: border-box;
+				width: 366px;
+				height: 210px;
+				background: rgba(51,51,51,0.8);
+			}
+			#container .cover-image {
+				position: absolute;
+				top: 60px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				text-align: center;
+			}
+			#container .case-cover h3 {
+				margin-top: 20px;
+				font: 20px/22px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: white;
+			}
+			#container .case-cover p {
+				position: absolute;
+				top: 145px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				font: 14px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: white;
+				opacity: 0;
+			}
+			#container .protection-case li:hover .case-cover{
+				background: rgba(0,124,195,0.8);
+			}
+			#container .protection-case li:hover .cover-image {
+				top: 40px;
+				transition: all 0.3s ease;
+			}
+			#container .protection-case li:hover p {
+				opacity: 1;
+			}
+			#container .protection-case .case1 {
+				background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB2d0shgCXlpuFjy0FeXXcJbFXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-case .case2 {
+				background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB2.FR7hY4npuFjSZFmXXXl4FXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-case .case3 {
+				background: url(https://img.alicdn.com/imgextra/i3/1036020250/TB25jFrhYBnpuFjSZFGXXX51pXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-case .case4{
+				background: url(https://img.alicdn.com/imgextra/i3/1036020250/TB21SotgrtlpuFjSspfXXXLUpXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-case .case5{
+				background: url(https://img.alicdn.com/imgextra/i2/1036020250/TB2IYdZh98mpuFjSZFMXXaxpVXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-case .case6{
+				background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB2ZrMrgChlpuFjSspkXXa1ApXa_!!1036020250.png) no-repeat;
+			}
+			#container .protection-action li{
+				float: left;
+				width: 275px;
+				margin-top: 70px;
+				tetx-align :center;
+				border-left: 1px solid #dddddd;
+			}
+			#container .protection-action li:first-child {
+				border: none;
+			}
+			#container .protection-action li h3 {
+				color: #2cc75f;
+				font-size: 40px;
+			}
+			#container .protection-action li p {
+				color: #2cc75f;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header" class=" clearfix">
+			<ul class="clearfix head-list layout">
+				<li class="head-title"><a href="./index.html"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2kPa5emFjpuFjSspbXXXagVXa_!!1036020250.png" alt="有赞图片"></a></li>
+				<li>
+					<ul class="clearfix head-main">
+						<li><a href="./index.html">首页</a></li>
+						<li class="product"><a href="##">产品中心<i class="iconfont">&#xe62b;</i></a>
+							<ul class="product-list">
+								<li><a href="./ecshop/index.html">微商城基础版</a></li>
+								<li><a href="##">微商城专业版</a></li>
+								<li><a href="##">微小店</a></li>
+								<li><a href="##">有赞收银</a></li>
+								<li><a href="##">有赞批发</a></li>
+								<li><a href="##">有赞小程序</a></li>
+								<li><a href="##">买家版</a></li>
+							</ul>
+						</li>
+						<li><a href="./fangan.html">行业方案</a></li>
+						<li><a href="##">开放平台</a></li>
+						<li><a href="##">商家社区</a></li>
+						<li><a href="##">服务支持</a></li>
+						<li><a href="./protection.html">消费保障</a></li>
+					</ul>
+				</li>
+				<li class="head-login">
+					<ul class="clearfix">
+						<li class="sign-in">登录</li>
+						<li class="sign-up">注册</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="container">
+			<div class="protection">
+			<div class="protection-slogan">
+				<ul class="clearfix protection-list layout">
+					<li class="protection-logan">消费保障</li>
+					<li class="protection-details clearfix">
+					<ul>
+					<li class="detail-power"><a href="./protection.html">消保力量</a></li>
+					<li class="detail-strategy"><a href="./protection-2.html">消保攻略</a></li>
+					<li class="detail-course"><a href="./protection-3.html">安全学堂</a></li>
+					<li class="detail-clear"><a href="./protection-4.html">商家清退</a></li>
+					</ul>
+					</li>
+				</ul>
+				</div>
+				<div class="protection-title">
+				<h1>有赞消费保障</h1>
+				<h3>协助买家卖家解决交易、物流、退款维权等问题</h3>
+			</div>
+			<div class="protection-safe layout">
+				<h2>多方协力，共建安全放心的移动购物环境</h2>
+				<ul class="clearfix protection-shopping">
+					<li class="shopping-seller">
+						<h3>商家</h3>
+						<p>开设自己的移动商城在</p>
+						<p>社交网络上卖货</p>
+					</li>
+					<li class="shopping-buyer">
+						<h3>买家</h3>
+						<p>成为商家的粉丝，在商</p>
+						<p>家的店铺里购物</p>
+					</li>
+					<li class="shopping-distributor">
+						<h3>分销商</h3>
+						<p>利用自己的传播能力分</p>
+						<p>销商家的产品获得分成</p>
+					</li>
+					<li class="shopping-youzan">
+						<h3>有赞</h3>
+						<p>专业软件公司，为商家</p>
+						<p>提供开店需要的各项功</p>
+						<p>能</p>
+					</li>
+				</ul>
+				<h2>买家售后处理途径</h2>
+				<h3>有赞郑重建议买家：有任何疑问均可联系商家直接处理</h3>
+				<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2P.YEhrlmpuFjSZFlXXbdQXXa_!!1036020250.png" alt=" tujing1.png"/>
+				<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2j4rChEdnpuFjSZPhXXbChpXa_!!1036020250.png" alt=" tujing2.png"/>
+				<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2XyvshstnpuFjSZFKXXalFFXa_!!1036020250.png" alt=" tujing3.png"/>
+				<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB257R9bthvOuFjSZFBXXcZgFXa_!!1036020250.png" alt=" tujing4.png"/>
+				<p>您也可以通过电话、社区发帖等形式，在有赞的协助下联系商家。<a href="">点击查看教程</a></p>
+				<p>如商家售后处理不及时，您也可以联系各级消费者协会进行投诉。</p>
+				<h2>商家经营提示</h2>
+				<h3>有赞郑重建议商家：设置专属售后客服岗位，积极妥善处理售后问题，才能有更多的回头客</h3>
+				<ol>
+					<li><span>商品描述真实可信</span></li>
+					<li><span>按照约定时间及时发货</span></li>
+					<li><span>在店铺内公示发货时间和客服作业时间</span></li>
+					<li><span>在订单详情页显示客服电话</span></li>
+					<li><span>在公众号菜单栏设置客服模块</span></li>
+					<li><span>及时处理维权订单和买家提问</span></li>
+					<li><span>保持维权通知手机通讯畅通</span></li>
+				</ol>
+				<a href="##" class="customer-service">查看更多</a>
+				<ul class="clearfix protection-case case-customer">
+					<li class="case1">
+						<div class="case-cover">
+							<div class="cover-image">
+								<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2t3thh0BopuFjSZPcXXc9EpXa_!!1036020250.png" alt=" icon1.png"/>
+								<h3>买家疑难问题热线</h3>
+							</div>
+							<p>在线响应买家咨询</p>
+						</div>
+					</li>
+					<li class="case2">
+					<div class="case-cover">
+						<div class="cover-image">
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2moFthYJmpuFjSZFwXXaE4VXa_!!1036020250.png" alt=" icon2.png"/>
+							<h3>买家售后问题协助团队</h3>
+						</div>
+						<p>协助买家联系商家，解决售后问题</p>
+					</li>
+					<li class="case3">
+					<div class="case-cover">
+						<div class="cover-image">
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2Yh8Ph5RnpuFjSZFCXXX2DXXa_!!1036020250.png" alt=" icon3.png"/>
+							<h3>消费安全技术团队</h3>
+						</div>
+						<p>监控消费风险，遇到异常主动出击，及时止损</p>
+					</li>
+				</ul>
+				<ul class="clearfix protection-case">
+					<li class="case4">
+					<div class="case-cover">
+						<div class="cover-image">
+							<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2JxhZh98mpuFjSZFMXXaxpVXa_!!1036020250.png" alt=" icon4.png"/>
+							<h3>风险交易预警系统</h3>
+						</div>
+						<p>24h全方位监测，异常数据自动报警，防范于未然</p>
+					</li>
+					<li class="case5">
+					<div class="case-cover">
+						<div class="cover-image">
+							<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2EwJYh90mpuFjSZPiXXbssVXa_!!1036020250.png" alt=" icon5.png"/>
+							<h3>快速应急解决方案</h3>
+						</div>
+						<p>常见问题备案，优先解决、快速响应</p>
+					</li>
+					<li class="case6">
+					<div class="case-cover">
+						<div class="cover-image">
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2L.QCgCxjpuFjSszeXXaeMVXa_!!1036020250.png" alt=" icon6.png"/>
+							<h3>买家消费警示专栏</h3>
+						</div>
+						<p>及时发布消费警示，提高买家维权意识</p>
+					</li>
+				</ul>
+				<h2>消费保障，有赞在行动</h2>
+				<p>作为一家给商家提供开店工具、收取软件服务年费作为盈利模式的软件公司，有赞在消费权益保障上却花费了非常多的额外成本</p>
+				<ul class="protection-action clearfix">
+					<li>
+						<h3>近60人</h3>
+						<p>消保客服团队</p>
+					</li>
+					<li>
+						<h3>7*9小时</h3>
+						<p>客服作业时间</p>
+					</li>
+					<li>
+						<h3>227次</h3>
+						<p>异常交易处理</p>
+					</li>
+					<li>
+						<h3>22万笔</h3>
+						<p>维权工单处理</p>
+					</li>
+				</ul>
+			</div>
+			</div>
+		<div class="contact clearfix">
+			<div class="layout">
+			<ul class="contact-list">
+				<ul>
+					<h2>关于有赞</h2>
+					<li><p><a href="##">关于有赞</a></p></li>
+					<li><p><a href="##">合作联系</a></p></li>
+					<li><p><a href="##">加入我们</a></p></li>
+					<li><p><a href="##">品牌资料包</a></p></li>
+				</ul>
+				<ul class="clearfix contact-service">
+					<h2>产品服务</h2>
+					<ul>
+						<li><p><a href="##">微商城</a></p></li>
+						<li><p><a href="##">有赞收银</a></p></li>
+						<li><p><a href="##">有赞批发</a></p></li>
+						<li><p><a href="##">服务市场</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">供货商</a></p></li>
+						<li><p><a href="##">微小店</a></p></li>
+						<li><p><a href="##">全员开店</a></p></li>
+						<li><p><a href="##">开放平台</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">行业方案</a></p></li>
+						<li><p><a href="##">买家版</a></p></li>
+						<li><p><a href="##">消费保障</a></p></li>
+						<li><p><a href="##">公益开店</a></p></li>
+					</ul>
+				</ul>
+				<ul class="contact-consolut">
+					<h2>电话咨询</h2>
+					<li><p>开店咨询：0571 - 8522 5188</p></li>
+					<li><p>商家服务：0571 - 8998 8848</p></li>
+					<li class="service-time"><p>周一到周日 9:00 ~ 18:00</p></li>
+				</ul>
+				<ul class="contact-code">
+					<li><img src="https://b.yzcdn.cn/v2/image/intro/new_index/footer_qrcode.png" alt=" footer_qrcode.png"/></li>
+					<li class="code-service"><p>有赞服务指南</p></li>
+				</ul>
+				</ul>
+			</div>
+			</div>
+			</div>
+		<div id="footer">
+			2012-2017 © youzan.com -  <a href="##" class="footer-police"><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2Mldle80kpuFjy1XaXXaFkVXa_!!1036020250.png" alt=" 276d5f72dc85cc584d83c08fefa36c2b.png"/>浙公网安备 33010602004354号 </a>增值电信业务经营许可证：<a href="##">浙B2-20140331 - 浙ICP备13037466号</a>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/protection.js"></script>
+	</body>
+</html>

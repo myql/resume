@@ -1,0 +1,344 @@
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+		<title>youzan</title>
+		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/protection.css">
+		<style>
+			#container .detail-clear a {
+                border-bottom: 2px solid #ee0000;
+                color: #ee0000;
+            }
+            #container .protection-title {
+                background: #1133ca url(https://img.alicdn.com/imgextra/i4/1036020250/TB22ZCYhxhmpuFjSZFyXXcLdFXa_!!1036020250.jpg) no-repeat center center;
+            }
+            #container .protection-course {
+					width :1100px;
+					margin: 0 auto;
+					padding: 45px 70px;
+				}
+				#container .course-care {
+					margin-top: 40px;
+					background: #f8f8f8;
+				}
+				#container .course-ad {
+					background: #f8f8f8;
+				}
+				#container .protection-course h3 {
+					position: relative;
+					font: bold 16px/28px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #333333;
+				}
+				#container .protection-course h3 a {
+					position: absolute;
+					right: 0;
+					top: 0;
+					display: inline-block;
+					width: 100px;
+					height: 40px;
+				   font: 14px/40px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					background: #2b90ed;
+					color: white;
+					text-align: center;
+					border-radius: 2px;	
+				}
+				#container .protection-course p {
+					font:  14px/28px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #666666;
+				}
+				#container .course-more {
+					display: block;
+					width :130px;
+					height: 50px;
+					margin: 60px auto 120px;
+					text-align: center;
+					font:  16px/50px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #2b90ed;
+					border: 1px solid #2b90ed;
+				}
+				#container .clear-intro {
+					width: 910px;
+					margin: 20px auto;
+					font: 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #333333;
+				}
+				#container .clear-intro p {
+					margin-bottom: 40px;
+				}
+				#container .clear-intro p span {
+					font-weight: bold;
+					color: #2b9b2d;
+				}
+				#container .clear-policy {
+					padding: 45px 0 0 0;
+				
+				}
+				#container .policy-intro {
+					width: 860px;
+					margin: 0 auto;
+				}
+				#container .policy-intro  img {
+					float: left;
+					display: block;
+					width :200px;
+					height: 200px;
+					margin-right: 130px;
+				}
+				#container .policy-intro .intro-image {
+					margin-right: 0;
+				}
+				#container .policy-intro  h3 {
+					font: bold 24px/24px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #2c3a46;
+				}
+				#container  .clear-list .list-title {
+					width : 100%;
+					height: 68px;
+					background:  url(https://img.alicdn.com/imgextra/i2/1036020250/TB2BE1zgYtlpuFjSspoXXbcDpXa_!!1036020250.jpg) no-repeat 50%;
+					background-size: cover;
+				}
+				#container  .clear-list h3 {
+					margin: 50px auto;
+					text-align: center;
+					font:  18px/28px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					color: #2c3a46;	
+				}
+				#container  .clear-list  h3.list-mall {
+					box-sizing: border-box;
+					width: 90px;
+					padding-left: 30px;
+					background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB21hCSictnpuFjSZFvXXbcTpXa_!!1036020250.png) no-repeat left center ;
+					background-size: contain;
+				}
+				#container  .clear-list  h3.list-supply {
+					box-sizing: border-box;
+					width: 115px;
+					padding-left: 50px;
+					background: url(https://img.alicdn.com/imgextra/i2/1036020250/TB21EePiiRnpuFjSZFCXXX2DXXa_!!1036020250.png) no-repeat left center ;
+					background-size: contain;
+				}
+				#container .clear-list {
+					background: #ebf4f6;
+					padding-bottom: 25px;
+				}
+				#container  .mall-list,#container  .supply-list {
+					position: relative;
+					box-sizing: border-box;
+					width: 1000px;
+					height :135px;
+					margin: 0 auto 25px;
+					padding: 20px 20px 20px 100px;
+					border: 1px solid #fff;
+					border-radius: 8px;
+					box-shadow: 0px 2px 4px 2px #ddd;
+					color: #2c3a46;
+
+				}
+				#container  .mall-list .mall-order {
+					position: absolute;
+					left: 25px;
+					top: 50%;
+					transform: translateY(-50%);
+					font: 50px/50px impact, arial;
+					color: #475775;
+				}
+				#container  .mall-list h4,#container  .supply-list h4,#container  .supply-list p span {
+					font: bold 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+					
+				}
+				#container  .mall-list p,#container  .supply-list p {
+					font: 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				}
+				#container  .mall-list p span {
+					color: #ff9935;
+				}
+				#container  .supply-list  {
+					height: 180px;
+					padding: 20px 20px 20px 220px;
+				}
+				#container  .supply-list  img {
+					position: absolute;
+					left: 40px;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 150px;
+					height: 150px;
+				}
+		</style>
+	</head>
+	<body>
+		<div id="header" class="clearfix">
+			<ul class="clearfix head-list layout">
+				<li class="head-title"><a href="./index.html"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2kPa5emFjpuFjSspbXXXagVXa_!!1036020250.png" alt="有赞图片"></a></li>
+				<li>
+					<ul class="clearfix head-main">
+						<li><a href="./index.html">首页</a></li>
+						<li class="product"><a href="##">产品中心<i class="iconfont">&#xe62b;</i></a>
+							<ul class="product-list">
+								<li><a href="./ecshop/index.html">微商城基础版</a></li>
+								<li><a href="##">微商城专业版</a></li>
+								<li><a href="##">微小店</a></li>
+								<li><a href="##">有赞收银</a></li>
+								<li><a href="##">有赞批发</a></li>
+								<li><a href="##">有赞小程序</a></li>
+								<li><a href="##">买家版</a></li>
+							</ul>
+						</li>
+						<li><a href="./fangan.html">行业方案</a></li>
+						<li><a href="##">开放平台</a></li>
+						<li><a href="##">商家社区</a></li>
+						<li><a href="##">服务支持</a></li>
+						<li><a href="./protection.html">消费保障</a></li>
+					</ul>
+				</li>
+				<li class="head-login">
+					<ul class="clearfix">
+						<li class="sign-in">登录</li>
+						<li class="sign-up">注册</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="container">
+			<div class="protection">
+			<div class="protection-slogan">
+				<ul class="clearfix protection-list layout">
+					<li class="protection-logan">消费保障</li>
+					<li class="protection-details clearfix">
+					<ul>
+					<li class="detail-power"><a href="./protection.html">消保力量</a></li>
+					<li class="detail-strategy"><a href="./protection-2.html">消保攻略</a></li>
+					<li class="detail-course"><a href="./protection-3.html">安全学堂</a></li>
+					<li class="detail-clear"><a href="./protection-4.html">商家清退</a></li>
+					</ul>
+					</li>
+				</ul>
+				</div>
+              <div class="protection-title">
+			    </div>
+				<div class="clear-intro">
+					<p>在移动互联网新的消费生态里，生产者、监管者、消费者三者的关系更为复杂，各自的行为边界变化更大，迫切需要整个生态提质升级，形成新消费背景下一种安全便利、公平竞争、诚信守法的新生态。</p>
+					<p>保障消费者权益，维护移动零售生态健康，与商家和消费者“<span>共筑消费新生态</span>”，让消费者更放心、更安心地消费，才能推动移动零售生态更加健康完善。</p>
+					<p>作为零售服务商，我们在服务的同时，更要成为生态的推进力量，起到监管的作用，为移动零售业的健康发展做出贡献，我们的服务对象是：有稳定的优质货源、具备优秀的服务能力，并重视售后服务和消费者口碑的良心商家，我们期待与这类志同道合的人创造未来更加伟大的零售事业。我们有责任让那些不良商家离开这个队伍。</p>
+					<p>为此，我们对一些将要或者正在破环这个生态的商家——零容忍。</p>
+				</div>
+				<div class="clear-policy">
+					<div class="policy-intro clearfix">
+						<h3>我们严厉打击</h3>
+						<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2Gshag80kpuFjSsppXXcGTXXa_!!1036020250.png" alt=" icon_315_hit_01.png"/>
+						<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB26AcRgH0kpuFjy0FjXXcBbVXa_!!1036020250.png" alt=" icon_315_hit_02.png"/>
+						<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2EhySictnpuFjSZFvXXbcTpXa_!!1036020250.png" alt=" icon_315_hit_03.png"/ class="intro-image">
+					</div>
+					<div class="clear-list">
+						<h2 class="list-title"></h2>
+						<h3 class="list-mall"><span>商城</span></h3>
+						<div class="mall-list">
+							<p class="mall-order">01</p>
+							<h4>店铺名称：三枣王子官方旗舰店</h4>
+							<h4>公司名称：湖南红颜枣业食品有限公司</h4>
+							<p>问题：出售商品与描述不符，处理态度强硬，对待消费者态度恶劣，引发<span>102</span>笔退款投诉。多个分销此商品的商家，也一直在投诉此供货商处理态度和商品问题。为了确保消费者和分销商权益，做清退处理。</p>
+						</div>
+						<div class="mall-list">
+							<p class="mall-order">02</p>
+							<h4>店铺名称：鲜惠</h4>
+							<h4>公司名称：上海逗笑文化传播有限公司</h4>
+							<p>问题：通过公众号发送商品链接，商品为包邮的低价商品，均价3元，买家传播然后产生大批量认识的买家购买。引发退款投诉<span>338</span>笔，卖家虚假发货，造成买家钱款损失。</p>
+						</div>
+						<div class="mall-list">
+							<p class="mall-order">03</p>
+							<h4>店铺名称：E纯</h4>
+							<h4>公司名称：北京金尚科技有限公司</h4>
+							<p>问题：商品价格0.01元，付邮费30元，虚假发货，造成买家钱款损失。引发<span>1999</span>笔退款投诉，有赞联系商家仍不配合处理。</p>
+						</div>
+						<div class="mall-list">
+							<p class="mall-order">04</p>
+							<h4>店铺名称：源丰国选</h4>
+							<p>问题：与E纯为同一问题类型商品价格0.01元，付邮费30元，虚假发货，引发<span>633</span>笔退款维权。</p>
+						</div>
+						<h3 class="list-supply"><span>供货商</span></h3>
+						<div class="supply-list">
+							<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2kuoPgNXkpuFjy0FiXXbUfFXa_!!1036020250.png" alt=" icon_315_show_01.png"/>
+							<h4>店铺名：雅歌哒</h4>
+							<h4>处罚原因：出售假冒伪劣商品</h4>
+							<p><span>处罚过程：</span>平台通过信息层面及其他综合纬度判断“【雅歌哒】正品阿迪达斯男鞋ZX750秋季三叶草休闲鞋轻便跑步鞋透气运动鞋子”为假冒，盗版产品。且供货商未在申诉期间内提供正品凭证。</p>
+							<p><span>处罚结果：</span>根据《供货商平台供货商处罚规则》从供货商平台清退</p>
+						</div>
+						<div class="supply-list">
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2dcmRiilnpuFjSZFgXXbi7FXa_!!1036020250.png" alt=" icon_315_show_02.png"/>
+							<h4>店铺名：艺动瑜伽</h4>
+							<h4>公司名称：北京菲特尼斯文化发展有限公司</h4>
+							<h4>处罚原因：出售假冒伪劣商品</h4>
+							<p><span>处罚过程：</span>平台通过分销商反馈查实“【经典书籍】瑜伽教练必看书籍 哈达瑜伽之光 王志成翻译”为盗版书籍</p>
+							<p><span>处罚结果：</span>根据《供货商平台供货商处罚规则》从供货商平台清退</p>
+						</div>
+						<div class="supply-list">
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2ygaTihBmpuFjSZFDXXXD8pXa_!!1036020250.png" alt=" icon_315_show_03.png"/>
+							<h4>店铺名：杰斯卡农商城</h4>
+							<h4>处罚原因：出售假冒伪劣商品</h4>
+							<p><span>处罚过程：</span>被多位分销商举报该平台美妆为假冒伪劣商品，多次与供货商交涉之后供货商未做任何答复。</p>
+							<p><span>处罚结果：</span>根据《供货商平台供货商处罚规则》从供货商平台清退</p>
+						</div>
+						<div class="supply-list">
+							<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2zhiSihxmpuFjSZFNXXXrRXXa_!!1036020250.png" alt=" icon_315_show_04.png"/>
+							<h4>店铺名：优尚上品</h4>
+							<h4>公司名称：深圳市聚智文化发展有限公司</h4>
+							<h4>处罚原因：出售假冒伪劣商品</h4>
+							<p><span>处罚过程：</span>据分销商反映在使用契尔氏金盏花水和牛油果眼霜之后，出现过敏反应。到专柜查验后，证实商品为假冒伪劣。且供货商未在申诉期间内提供正品凭证。</p>
+							<p><span>处罚结果：</span>根据《供货商平台供货商处罚规则》从供货商平台清退</p>
+						</div>
+					</div>
+				</div>
+				</div>
+		<div class="contact clearfix">
+			<div class="layout">
+			<ul class="contact-list">
+				<ul>
+					<h2>关于有赞</h2>
+					<li><p><a href="##">关于有赞</a></p></li>
+					<li><p><a href="##">合作联系</a></p></li>
+					<li><p><a href="##">加入我们</a></p></li>
+					<li><p><a href="##">品牌资料包</a></p></li>
+				</ul>
+				<ul class="clearfix contact-service">
+					<h2>产品服务</h2>
+					<ul>
+						<li><p><a href="##">微商城</a></p></li>
+						<li><p><a href="##">有赞收银</a></p></li>
+						<li><p><a href="##">有赞批发</a></p></li>
+						<li><p><a href="##">服务市场</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">供货商</a></p></li>
+						<li><p><a href="##">微小店</a></p></li>
+						<li><p><a href="##">全员开店</a></p></li>
+						<li><p><a href="##">开放平台</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">行业方案</a></p></li>
+						<li><p><a href="##">买家版</a></p></li>
+						<li><p><a href="##">消费保障</a></p></li>
+						<li><p><a href="##">公益开店</a></p></li>
+					</ul>
+				</ul>
+				<ul class="contact-consolut">
+					<h2>电话咨询</h2>
+					<li><p>开店咨询：0571 - 8522 5188</p></li>
+					<li><p>商家服务：0571 - 8998 8848</p></li>
+					<li class="service-time"><p>周一到周日 9:00 ~ 18:00</p></li>
+				</ul>
+				<ul class="contact-code">
+					<li><img src="https://b.yzcdn.cn/v2/image/intro/new_index/footer_qrcode.png" alt=" footer_qrcode.png"/></li>
+					<li class="code-service"><p>有赞服务指南</p></li>
+				</ul>
+				</ul>
+			</div>
+			</div>
+			</div>
+		<div id="footer">
+			2012-2017 © youzan.com -  <a href="##" class="footer-police"><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2Mldle80kpuFjy1XaXXaFkVXa_!!1036020250.png" alt=" 276d5f72dc85cc584d83c08fefa36c2b.png"/>浙公网安备 33010602004354号 </a>增值电信业务经营许可证：<a href="##">浙B2-20140331 - 浙ICP备13037466号</a>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/protection.js"></script>
+	</body>
+</html>

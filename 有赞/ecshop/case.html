@@ -1,0 +1,1029 @@
+
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+		<title>youzan</title>
+		<link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/protection.css">
+        <link rel="stylesheet" href="../css/ecshop.css">
+		<style>
+			@font-face {
+				font-family: 'iconfont';  /* project id 233341 */
+				src: url('https://at.alicdn.com/t/font_ryzlajw1huwbqpvi.eot');
+				src: url('https://at.alicdn.com/t/font_ryzlajw1huwbqpvi.eot?#iefix') format('embedded-opentype'),
+				url('https://at.alicdn.com/t/font_ryzlajw1huwbqpvi.woff') format('woff'),
+				url('https://at.alicdn.com/t/font_ryzlajw1huwbqpvi.ttf') format('truetype'),
+				url('https://at.alicdn.com/t/font_ryzlajw1huwbqpvi.svg#iconfont') format('svg');
+			}
+			#container .detail-course a {
+				border-bottom: 2px solid #ee0000;
+				color: #ee0000;
+			}
+			#container .case-slogan{
+				position: relative;
+				color: white;
+				width: 100%;
+				height: 430px;
+				overflow: hidden;
+			}
+			#container  .case-list {
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+			}
+			#container  .case-list li {
+				float: left;
+				width: 100%;
+			}
+			#container  .case-list div{
+				box-sizing: border-box;
+				width :1106px;
+				height: 430px;
+				margin: 0  auto;
+				padding: 75px 163px;	
+			}
+			#container .case-slogan p {
+				font: 16px/28px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;  
+			}
+			#container  .shop-assess {
+				margin-top: 35px;
+			}
+			#container  .shop-name {
+				margin-top: 50px;
+			}
+			#container .case-slogan .good-shop {
+				background: #d73f2c;
+			}
+			#container .case-slogan .great-beauty {
+				background: #e92193;
+			}
+			#container .case-slogan .thousand-machine {
+				background: #f45700;
+			}
+			#container .case-slogan .thousand-machine {
+				background: #f45700;
+			}
+			#container .case-slogan .art-choice {
+				background: #e8297f;
+			}
+			#container .case-slogan .fart-man {
+				background: #00121d;
+			}
+			#container .case-slogan .essential-oils {
+				background: #0E331a;
+			}
+			#container .case-slogan .w-group{
+				background: #d60000;
+			}
+			#container .case-slogan .walch-group{
+				background: #1256ab;
+			}
+			#container .shop-post {
+				float: left;
+			}
+			#container .shop-mall {
+				float: right;
+				display: inline-block;
+				width: 90px;
+				height: 28px;
+				border: 1px solid #ffffff;
+				border-radius: 2px;
+				color: white;
+				text-align: center;
+				font: 16px/28px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;  
+			}
+			#container .shop-link {
+				position: absolute;
+				top: 215px;
+				margin-top: -20px;
+				display: none;
+			}
+			#container .case-slogan:hover .shop-link {
+				display: block;
+			}
+			#container .shop-link i {
+				font-size: 40px;  
+				color:#cfddee;
+			}
+			#container .shop-ahead {
+				left: 15%;
+			}
+			#container .shop-back{
+				right: 15%;
+			}
+			#container .case-dot {
+				position: absolute;
+				bottom: 20px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			#container .case-dot li{
+				float: left;
+				width: 10px;
+				height: 10px;
+				border-radius: 100%;
+				border: 1px solid white;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			#container .case-dot .dot-active {
+				background: white;
+			}
+			#container .instance-head {
+				width: 1106px;
+				margin :0 auto;
+			}
+			#container .instance-head>li{
+				position: relative;
+				float: left;
+				height: 60px;
+				width: 120px;
+				text-align: center;
+			}
+			#container .instance-head>li>a {
+				display: inline-block;
+				color: #333333;
+				width: 120px;
+				margin: 19px 0;
+				border-right: 1px solid #E5E5E5;
+				font: 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+			}
+			#container .instance-head>li>a:hover {
+				color: #ee0000;
+			}
+			#container .instance-head>li a.home-page {
+				border-left: 1px solid #e5e5e5;
+			}
+			#container .instance-head>li:hover .general-information {
+				display: block;
+			}
+			#container .home-general .general-information {
+				height: 300px;
+			}
+			#container .general-information {
+				position: absolute;
+				top: 50px;
+				left: 0;
+				z-index: 11;
+				box-sizing: border-box;
+				width: 150px;
+				height: 150px;
+				border: 1px solid #e5e5e5;
+				padding-left: 15px;
+				background: white;
+				display: none;
+			}
+			#container .general-information  a{
+				color: #697975; 
+			}
+			#container .general-information li {
+				float: left;
+				width: 60px;
+				height: 30px;
+				text-align: left;
+			}
+			#container .general-information h3 {
+				font: 14px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+			}
+			#container .general-information li {
+					font: 12px/30px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+			}
+			#container .general-information li a:hover {
+				text-decoration: underline;
+			}
+			#container .instance-detail {
+				width: 100%;
+				background: #f8f8f8;
+				padding-top: 30px;
+			}
+			#container .instance-main {
+				width: 1160px;
+				margin: 0px auto;
+				background: #f8f8f8;
+			}
+			#container .instance-main li {
+				float: left;
+				width: 110px;
+				height: 160px;
+				text-align: center;
+				margin-left: 30px;
+			}
+			#container .instance-main li a {
+				box-sizing: border-box;
+				display: inline-block;
+				width: 110px;
+				height: 160px;
+				font: bold 15px/65px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+				color: #333333;
+			}
+			#container .instance-main li a:hover {
+				opacity: 0.6;
+			}
+			#container .instance-main li a.main-topic1 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i4/1036020250/TB2qj9mkr4npuFjSZFmXXXl4FXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic2 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i3/1036020250/TB2faynkt4opuFjSZFLXXX8mXXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic3 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i3/1036020250/TB20YUzedhvOuFjSZFBXXcZgFXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic4 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i1/1036020250/TB2BIKnkxlmpuFjSZPfXXc9iXXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic5 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i2/1036020250/TB2KlnQiSFjpuFjSspbXXXagVXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic6 {
+			background:#ffffff url(https://img.alicdn.com/imgextra/i4/1036020250/TB2N.C9iSBjpuFjy1XdXXaooVXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic7 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i3/1036020250/TB244MaiSJjpuFjy0FdXXXmoFXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .instance-main li a.main-topic8 {
+			background: #ffffff url(https://img.alicdn.com/imgextra/i4/1036020250/TB23z9mkr4npuFjSZFmXXXl4FXa_!!1036020250.png) center 60px no-repeat;
+			}
+			#container .detail-general h2 {
+				font: bold 18px/18px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+				color: #2c3a46;
+				margin-bottom: 23px;
+				margin-top: 55px;
+			}
+			#container .general-list {
+				margin-right: -30px;
+			}
+			#container .general-list>li {
+				float: left;
+				margin-right: 30px;
+			}
+			#container .general-show img {
+				width: 260px;
+			}
+			#container .general-show {
+				position: relative;
+				width: 260px;
+				height: 340px;
+				background: white;
+			}
+			#container .general-show  h3 {
+				font: bold 14px/44px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+				padding-left: 10px;
+			}
+			#container .general-show p {
+				font: 12px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+				color: #666666;
+				padding-left: 10px;
+			}
+			#container .general-list .general-city {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			#container .general-show:hover .general-intro {
+				display: none;
+			}
+			#container .general-show:hover .general-image {
+				display:block;
+			}
+			#container .general-show .general-image  {
+				width: 100px;
+				height: 100px;
+				margin: 40px auto 0;
+				text-align: center;
+				color: #999999;
+				display: none;
+			}
+			#container .general-show .general-image img {
+				width: 100px;
+				height: 100px;
+			}
+			#container .general-list .general-nav  {
+				box-sizing: border-box;
+				width: 230px;
+				height: 322px;
+				
+			}
+			#container .over-all .general-nav {
+				background: #ad8979;
+			}
+			#container .general-food .general-nav {
+				background: #f39c57;
+			}
+			#container .general-woman .general-nav {
+				background: #f77699;
+			}
+			#container .general-man .general-nav {
+				background: #4d92df;
+			}
+			
+			#container .general-makeup .general-nav {
+				background: #f77699;
+			}
+			#container .general-child .general-nav {
+				background: #b4a080;
+			}
+			#container .general-digital .general-nav {
+				background: #326fb4;
+			}
+			#container .general-more .general-nav {
+				background: #4f35b3;
+			}
+			#container .general-nav a {
+				color: white;
+			}
+			#container .general-nav a:hover {
+				text-decoration: underline;
+			}
+			#container .general-nav li {
+				float: left;
+				box-sizing: border-box;
+				padding-left: 30px;
+				width: 100px;
+				margin-top: 5px;
+				font: 14px/30px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif; 
+			}
+			#container .make-list {
+				display: block;
+				width: 200px;
+				height: 42px;
+				margin: 79px auto 0 auto;
+				border: 1px solid #2b90ed;
+				font: 14px/42px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+				color: 	#2b90ed;	
+				border-radius: 2px;
+				text-align: center;
+			}
+			#container .make-list:hover {
+				background: #2b90ed;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header" class="clearfix">
+			<ul class="clearfix head-list layout">
+				<li class="head-title"><a href="./index.html"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2kPa5emFjpuFjSspbXXXagVXa_!!1036020250.png" alt="有赞图片"></a></li>
+				<li>
+					<ul class=" head-main">
+						<li><a href="../index.html">首页</a></li>
+						<li class="product"><a href="##">产品中心<i class="iconfont">&#xe62b;</i></a>
+							<ul class="product-list">
+								<li><a href="./index.html">微商城基础版</a></li>
+								<li><a href="##">微商城专业版</a></li>
+								<li><a href="##">微小店</a></li>
+								<li><a href="##">有赞收银</a></li>
+								<li><a href="##">有赞批发</a></li>
+								<li><a href="##">有赞小程序</a></li>
+								<li><a href="##">买家版</a></li>
+							</ul>
+						</li>
+						<li><a href="../fangan.html">行业方案</a></li>
+						<li><a href="##">开放平台</a></li>
+						<li><a href="##">商家社区</a></li>
+						<li><a href="##">服务支持</a></li>
+						<li><a href="../protection.html">消费保障</a></li>
+					</ul>
+				</li>
+				<li class="head-login">
+					<ul class="clearfix">
+						<li class="sign-in">登录</li>
+						<li class="sign-up">注册</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="container">
+			<div class="ecshop">
+			<div class="protection-slogan">
+				<ul class="clearfix protection-list layout">
+					<li class="protection-logan">微商城基础版</li>
+					<li class="protection-details clearfix">
+					<ul>
+					<li class="detail-power"><a class="detail-list" href="./index.html">概览</a></li>
+					<li class="detail-strategy"><a class="detail-list" href="./function.html">功能</a></li>
+					<li class="detail-course"><a  class="detail-list" href="./case.html">案例</a></li>
+					<li class="detail-price"><a  class="detail-list" href="./price.html">价格</a></li>
+					<li class="detail-faq"><a class="detail-list"  href="./faq.html">常见问题</a></li>
+					<li class="detail-trial"><a  class="trial-link" href="./faq.html">免费试用</a></li
+					</ul>
+					</li>
+				</ul>
+				</div>
+				<div class="case-slogan">
+			
+					<ul class="clearfix case-list">
+						<li class="good-shop clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2oo3hilNkpuFjy0FaXXbRCVXa_!!1036020250.png" alt=" shop_logo_1.png"/>
+							<p class="shop-assess">有赞强大的客户管理功能帮助我们勾勒出百万门店粉丝的用户画像，精准营销为门店顾客提供了第二种购买路径的愉悦体验，同时使门店顾客电子数据化，指导门店商品的最佳陈列，高效满足用户购买需求，给良品铺子O2O战略落地提供坚实的基础，有你，有赞！</p>
+							<p class="shop-name">揭晓峰</p>
+							<p class="shop-post">良品铺子集团副总裁</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="great-beauty clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2.d0ciCFjpuFjSszhXXaBuVXa_!!1036020250.png" alt=" shop_logo_2.png"/>
+							<p class="shop-assess">“我是大美人”采用节目+视频直播+社区+网购的“重”玩法来实现T20产业链闭环。背靠湖南卫视，“我是大美人”有创业公司不具备的电视节目制作资源和粉丝基数，且签约的美妆达人在直播中有多机位拍摄和切换，来确保视频质量。直播过程中，会出现产品购买链接，将用户导入有赞微商城，实现即看即买。</p>
+							<p class="shop-name">胡智翔</p>
+							<p class="shop-post">快乐讯（我是大美人）副总经理</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="thousand-machine clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2FxUrimBjpuFjSsplXXa5MVXa_!!1036020250.png" alt=" shop_logo_3.png"/>
+							<p class="shop-assess">有赞微商城强大的功能，为千机网本地化O2O运营模式提供了有力的技术支持。业务模块集合千机团（B2B）、千机网商城（B2C），同时嵌入“急啥”3C智能本地化服务平台，经营品类涵盖手机、3C配件、智能硬件等。其开创性的模式与综合布局，使千机网具备了为全产业生态价值链提供服务的体量与能力。</p>
+							<p class="shop-name">隆北平</p>
+							<p class="shop-post">千机网COO</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="art-choice clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2W0.Lim0jpuFjy0FlXXc0bpXa_!!1036020250.png" alt=" shop_logo_4.png"/>
+							<p class="shop-assess">大家好，我是文怡，这是【文怡之选】的有赞小店儿，我梦想中的小杂货铺儿哦。在这里，每周三（如果我不偷懒的话）你都会看到一款高品质的精致好用的厨房工具，家居用品，也或者是亲子产品，我把我这些年来用过的所有好产品，我认知范围内的好东西，一点点的全带给你。让我们一起，好好生活！</p>
+							<p class="shop-name">文怡</p>
+							<p class="shop-post">美食畅销书作家美食节目主持人</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="fart-man clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2.SUvil0lpuFjSszdXXcdxFXa_!!1036020250.png" alt=" shop_logo_5.png"/>
+							<p class="shop-assess">有赞微商城有很多好玩的社交营销工具，如送礼、代付，结合这些营销工具，让网红能够轻松的将粉丝在微信公众号沉淀下来，并完成转化。网络红人屁侠（@眼袋pippa）在微商城不定期上新独家自制私服、美妆以及其他推荐小物。通过朋友圈传播，发展成为高成交、高客单、高复购的优质粉丝经济。</p>
+							<p class="shop-name">沈敏</p>
+							<p class="shop-post">屁侠创始人</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="essential-oils clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2EJEnibBkpuFjy1zkXXbSpFXa_!!1036020250.png" alt=" shop_logo_6.png"/>
+							<p class="shop-assess">就像我们关注短语所说的，我们就是粉丝命中注定的闺蜜，帮助粉丝解决一切护肤及身心烦恼。与有赞惊喜相遇，微商城强大稳定的系统、丰富有趣的营销工具对粉丝维护和转化有着不可或缺的作用，例如不定期通过有赞的场景画报制造惊喜与感动，为粉丝提供新品提前试用、专享优惠价等一系列福利。</p>
+							<p class="shop-name">果小</p>
+							<p class="shop-post">阿芙精油市场部总监</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="w-group clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2z9Zvil0lpuFjSszdXXcdxFXa_!!1036020250.png" alt=" shop_logo_7.png"/>
+							<p class="shop-assess">王府井集团专注国内零售业态发展，借助有赞强大的客户功能和销售员功能，将线下49家门店的优质用户引到线上，为其提供线上线下一体化的服务体验，顾客可以通过线上平台第一时间了解门店的各种营销活动，支持线上订购送货上门、线上支付到店核销，线上订购到店提货等跨渠道购物体验。</p>
+							<p class="shop-name">刘春吉</p>
+							<p class="shop-post">王府井集团电子商务公司副总经理</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+						<li class="walch-group clearfix">
+							<div>
+							<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2EEovib0kpuFjy0FjXXcBbVXa_!!1036020250.png" alt=" shop_logo_8.png"/>
+							<p class="shop-assess">社交电商一直是威露士的重点发展方向。作为家清消毒领域的领军企业，如何将粉丝与品牌深度黏合，更是我们的核心考量。有赞微商城通过强大的客户管理功能以及基于社交属性的营销工具，为粉丝维护和购买转化提供了完善的系统支持。为我们的社交电商布局，打开了无限想象空间。有你，有赞！</p>
+							<p class="shop-name">符含译</p>
+							<p class="shop-post">威露士集团运营总监</p>
+							<a class="shop-mall"href="##">查看商城</a>
+							</div>
+						</li>
+					</ul>
+					<a href="##" class="shop-link shop-ahead"><i class="iconfont">&#xe614;</i></a>
+					<a href="##" class="shop-link shop-back"><i class="iconfont">&#xe615;</i></a>
+					<ul class="case-dot clearfix">
+						<li class="dot-active"></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+		<div class="case-instance">
+			<ul class="clearfix instance-head">
+		
+				<li><a href="##" class="home-page">首页</a></li>
+				<li class="home-general"><a href="##">综合</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">综合</a></h3>
+						<li><a href="##">媒体电商</a></li>
+						<li><a href="##">知名企业</a></li>
+						<li><a href="##">百货商超</a></li>
+						<li><a href="##">票务卡券</a></li>
+						<li><a href="##">休闲娱乐</a></li>
+						<li><a href="##">教育培训</a></li>
+						<li><a href="##">礼品鲜花</a></li>
+						<li><a href="##">医疗健康</a></li>
+						<li><a href="##">创意礼品</a></li>
+						<li><a href="##">汽车养护</a></li>
+						<li><a href="##">民俗文化</a></li>
+						<li><a href="##">家装建材</a></li>
+						<li><a href="##">家纺被枕</a></li>
+						<li><a href="##">宠物</a></li>
+						<li><a href="##">婚纱摄影</a></li>
+						<li><a href="##">丽人健身</a></li>
+						<li><a href="##">酒店旅游</a></li>
+					</ul>
+				</li>
+				<li><a href="##">食品</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">食品</a></h3>
+						<li><a href="##">休闲零食</a></li>
+						<li><a href="##">水果生鲜</a></li>
+						<li><a href="##">咖啡茶饮</a></li>
+						<li><a href="##">蛋糕烘培</a></li>
+						<li><a href="##">外卖餐饮</a></li>
+						<li><a href="##">乡土特产</a></li>
+						<li><a href="##">酒水饮料</a></li>
+						<li><a href="##">营养滋补</a></li>
+					</ul>
+				</li>
+				<li><a href="##">女人</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">女人</a></h3>
+						<li><a href="##">女装</a></li>
+						<li><a href="##">女包</a></li>
+						<li><a href="##">珠宝饰品</a></li>
+						<li><a href="##">女士内衣</a></li>
+						<li><a href="##">女鞋</a></li>
+					</ul>
+				</li>
+				<li><a href="##">男人</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">男人</a></h3>
+						<li><a href="##">男人</a></li>
+						<li><a href="##">运动户外</a></li>
+						<li><a href="##">男装</a></li>
+					</ul>
+				</li>
+				<li><a href="##">美妆</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">美妆</a></h3>
+						<li><a href="##">彩妆香水</a></li>
+						<li><a href="##">面膜乳霜</a></li>
+						<li><a href="##">个人护理</a></li>
+					</ul>
+				</li>
+				<li><a href="##">亲子</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">亲子</a></h3>
+						<li><a href="##">母婴用品</a></li>
+						<li><a href="##">童装童鞋</a></li>
+						<li><a href="##">早教教育</a></li>
+					</ul>
+				</li>
+				<li><a href="##">数码家电</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">数码家电</a></h3>
+						<li><a href="##">家用电器</a></li>
+						<li><a href="##">智能硬件</a></li>
+						<li><a href="##">3C数码</a></li>
+					</ul>
+				</li>
+				<li><a href="##">更多</a>
+					<ul class="clearfix general-information">
+						<h3><a href="##">更多</a></h3>
+						<li><a href="##">VIP商户</a></li>
+						<li><a href="##">公益开店</a></li>
+						<li><a href="##">有赞商盟</a></li>
+						<li><a href="##">明星达人</a></li>
+						<li><a href="##">品牌商家</a></li>
+					</ul>
+				</li>
+			</ul>
+		<div class="instance-detail">
+			<ul class="clearfix instance-main">
+				<li><a href="##" class="main-topic1">外卖餐饮</a></li>
+				<li><a href="##" class="main-topic2">鲜花</a></li>
+				<li><a href="##" class="main-topic3">水果生鲜</a></li>
+				<li><a href="##" class="main-topic4">女装</a></li>
+				<li><a href="##" class="main-topic5">孕婴用品</a></li>
+				<li><a href="##" class="main-topic6">家电数码</a></li>
+				<li><a href="##" class="main-topic7">坚果零食</a></li>
+				<li><a href="##" class="main-topic8">品牌商户</a></li>
+			</ul>
+			<div class="detail-general layout ">
+			<div class="over-all">
+			<h2>综合</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">媒体电商</a></li>
+						<li><a href="##">知名企业</a></li>
+						<li><a href="##">百货商超</a></li>
+						<li><a href="##">票务卡券</a></li>
+						<li><a href="##">休闲娱乐</a></li>
+						<li><a href="##">教育培训</a></li>
+						<li><a href="##">礼品鲜花</a></li>
+						<li><a href="##">医疗健康</a></li>
+						<li><a href="##">创意礼品</a></li>
+						<li><a href="##">汽车养护</a></li>
+						<li><a href="##">民俗文化</a></li>
+						<li><a href="##">家装建材</a></li>
+						<li><a href="##">家纺被枕</a></li>
+						<li><a href="##">宠物</a></li>
+						<li><a href="##">婚纱摄影</a></li>
+						<li><a href="##">丽人健身</a></li>
+						<li><a href="##">酒店旅游</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB21VIHiSBjpuFjSsplXXa5MVXa_!!1036020250.png" alt=" FmfTXCXsWVSHtmeKhxgZLDYxPtKV.png"/>
+				<div class="general-intro">
+				<h3>文怡之选</h3>
+				<p>在这里，我把我这些年来用过的所有好产品，我认知范围内的好东西，一点点的全带给你。让我们一起，好好生活！</p>
+				<p class="general-city">城市：北京 北京</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=830323" alt="文怡之选二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB24AXeiW8lpuFjy0FpXXaGrpXa_!!1036020250.jpg" alt=" Fn6mkMVJq_KhMeMyMDRW-kpFRgMc.jpg"/>
+				<div class="general-intro">
+				<h3>凯叔优选</h3>
+				<p>“凯叔讲故事”微商城</p>
+				<p class="general-city">城市：北京 北京</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=331406" alt="凯叔讲故事二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2fWoMiR0lpuFjSszdXXcdxFXa_!!1036020250.jpg" alt=" Fj7QNeW8VFXUkvdbpvZ6VlfPSkun.jpg"/>
+				<div class="general-intro">
+				<h3>央广购物</h3>
+				<p>网罗全球优质商品，100%正品保证，每天不一样的惊喜，每天不变幸福相约</p>
+				<p class="general-city">城市：北京 北京</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=7560" alt="央广购物二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<div class="general-food">
+			<h2>食品</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">休闲零食</a></li>
+						<li><a href="##">水果生鲜</a></li>
+						<li><a href="##">咖啡茶饮</a></li>
+						<li><a href="##">外卖套餐</a></li>
+						<li><a href="##">休闲娱乐</a></li>
+						<li><a href="##">乡土特产</a></li>
+						<li><a href="##">酒水饮料</a></li>
+						<li><a href="##">医疗健康</a></li>
+						<li><a href="##">营养滋补</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2ORzFkrlmpuFjSZFlXXbdQXXa_!!1036020250.jpg" alt=" FsL2AiFqLlvK3li4-zdH2f7YXHBW.jpg"/>
+				<div class="general-intro">
+				<h3>良品铺子手机商城</h3>
+				<p>一家集休闲食品研发、加工分装、零售服务</p>
+				<p class="general-city">城市：湖北 武汉</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=47999" alt="良品铺子二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB24.kme5C9MuFjSZFoXXbUzFXa_!!1036020250.jpg" alt=" FvQglk7xpodFvI1yjlC9F2ky0iKq.jpg"/>
+				<div class="general-intro">
+				<h3>来伊份旗舰店</h3>
+				<p>17年来一直致力于打造“休闲食品第一品牌”，来伊份，你得零食管家！</p>
+				<p class="general-city">城市：上海 上海</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=1687556" alt="来伊份二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li class="general-show"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2rV.riSBjpuFjy1XdXXaooVXa_!!1036020250.jpg" alt=" Fk_Urrh-RB345w0eTTcWGcLYZqKe.jpg"/>
+				<div class="general-intro">
+				<h3>周黑鸭微商城</h3>
+				<p>“周黑鸭”诞生于湖北武汉，以其“入口微甜爽辣，吃后回味悠长”的独特口味深得年轻人的青睐。“美味和安全”是我们的承诺。</p>
+				<p class="general-city">城市：湖北 武汉</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=1920889" alt="周黑鸭二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<div class="general-woman">
+			<h2>女人</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">女装</a></li>
+						<li><a href="##">女包</a></li>
+						<li><a href="##">珠宝饰品</a></li>
+						<li><a href="##">女士内衣</a></li>
+						<li><a href="##">女鞋</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2yXRciY8kpuFjy0FcXXaUhpXa_!!1036020250.jpeg" alt=" Fm4j0IdFzGEcqaOXqYT2CdaHsZTq.jpeg"/>
+				<div class="general-intro">
+				<h3>IMMI</h3>
+				<p>原创设计师品牌，由IT前品牌经理Joyce和朴树太太吴晓敏创立，主打中性色调，大牌范儿十足，在经典风格的基础上展现不俗个性。</p>
+				<p class="general-city">城市：上海 上海</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=47999" alt="IMMI二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2kR.9iHRkpuFjSspmXXc.9XXa_!!1036020250.jpg" alt=" Fi80ltv63AD1qBz9Y4pVbD-Br5Z5.jpg"/>
+				<div class="general-intro">
+				<h3>長作棟梁</h3>
+				<p>長作棟梁，是一家设计师买手店，也是最早致力于推广中国独立设计师的多品牌概念店。
+“不止于店，亦友亦家”是長作棟梁不变的主题。</p>
+				<p class="general-city">城市：上海 上海</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=1687556" alt="長作棟梁二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li class="general-show"><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2HDwMiStkpuFjy0FhXXXQzFXa_!!1036020250.jpg" alt=" FkrnDZjcr9-c2TuTUAV3AdqtjxQb.jpg"/>
+				<div class="general-intro">
+				<h3>绽放</h3>
+				<p>开创国内第一个专业的旅行风格休闲女装品牌，全店不开旺旺自助购物，百分百好评。</p>
+				<p class="general-city">城市：江苏 苏州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=55" alt="绽放二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<div class="general-man">
+			<h2>男人</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">男人</a></li>
+						<li><a href="##">运动户外</a></li>
+						<li><a href="##">男装</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB20MPYkt4opuFjSZFLXXX8mXXa_!!1036020250.jpg" alt=" FtCxNxtfsEWdQxBmH7zrszCwWUzX.jpg"/>
+				<div class="general-intro">
+				<h3>男人袜</h3>
+				<p>中国首家商务男袜包年订购服务商，一次订购，定期寄送到家！全店转化率达9.47%，已购买过的粉丝占比达30.49%。</p>
+				<p class="general-city">城市：湖北 武汉</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=28" alt="男人袜二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2DRg3iHXlpuFjy1zbXXb_qpXa_!!1036020250.jpeg" alt=" Fr1M6_i2sx9KCm2QGfxh74LA2oN1.jpeg"/>
+				<div class="general-intro">
+				<h3>NPC</h3>
+				<p>李晨&潘玮柏合开，以成为国内街头潮流文化的新项目中心为目标</p>
+				<p class="general-city">城市：上海 上海</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=486507" alt="NPC二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				
+			</ul>
+			</div>
+			<div class="general-makeup">
+			<h2>美妆</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">彩妆香水</a></li>
+						<li><a href="##">面膜乳霜</a></li>
+						<li><a href="##">个人护理</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2oR6FkstnpuFjSZFvXXbcTpXa_!!1036020250.jpg" alt=" Ftsz4G4xvtgGx1suzrJxRqvqHAII.jpg"/>
+				<div class="general-intro">
+				<h3>猪哼少剁手小分队</h3>
+				<p>一直被传说 从未被颠覆 坚信口碑的力量 坚信一切依靠群众 和猪哼少一起寻找更好的自己</p>
+				<p class="general-city">城市：浙江 杭州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=47999" alt="猪哼少二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2l7H2kxBmpuFjSZFDXXXD8pXa_!!1036020250.jpg" alt=" Fki8RHbkZ4IbiXZylWCVoo49DtcH.jpg"/>
+				<div class="general-intro">
+				<h3>草木肌官方微商城</h3>
+				<p>OITA为日本无添加主义研发机构「草木肌」旗下的少女甜美彩妆品牌。</p>
+				<p class="general-city">城市：广东 广州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=789469" alt="草木肌二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+			
+			</ul>
+			</div>
+			<div class="general-child">
+			<h2>亲子</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">母婴用品</a></li>
+						<li><a href="##">童装童鞋</a></li>
+						<li><a href="##">早教教育</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB27HxFi3xlpuFjy0FoXXa.lXXa_!!1036020250.jpg" alt=" FkEzs1sRVr9LrKXNzXxh2IVpLtH4.jpg"/>
+				<div class="general-intro">
+				<h3>贝舒乐</h3>
+				<p>贝舒乐纸尿裤，专注于适合中国宝宝的纸尿裤，更懂宝宝需求，为宝宝的成长创造快乐的环境！</p>
+				<p class="general-city">城市：广东 深圳</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=83619" alt="贝舒乐二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2PsmsethvOuFjSZFBXXcZgFXa_!!1036020250.jpg" alt=" FlktHY7ryzNvv2Sv4mzaso7vCTzN.jpg"/>
+				<div class="general-intro">
+				<h3>布朗博士旗舰店</h3>
+				<p>布朗博士的品牌焦点都是为促进婴儿的身体健康和最佳营养创造最好的喂哺产品，一直做妈妈们可以信赖的品牌！</p>
+				<p class="general-city">城市：广东 广州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=1955359" alt="布朗博士二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li class="general-show"><img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2ktAviSXlpuFjy0FeXXcJbFXa_!!1036020250.jpg" alt=" FlktHY7ryzNvv2Sv4mzaso7vCTzN.jpg"/>
+				<div class="general-intro">
+				<h3>大王GOON官方旗舰店</h3>
+				<p>“大王GOO.N纸尿裤诞生于日本三大综合制纸公司之一的大王制纸株式会社。大王GOO.N希望把更多的爱带给中国宝宝和妈妈。</p>
+				<p class="general-city">城市：上海 上海</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=16463689" alt="大王二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<div class="general-digital">
+			<h2>数码家电</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">家用电器</a></li>
+						<li><a href="##">智能硬件</a></li>
+						<li><a href="##">3C数码</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2stUMiNXkpuFjy0FiXXbUfFXa_!!1036020250.jpg" alt=" Frzm7qO4623Ugii3Kp2yQ9LFvXlk.jpg"/>
+				<div class="general-intro">
+				<h3>乐华电视</h3>
+				<p>快乐产品、快乐生活，引领高端性价比</p>
+				<p class="general-city">城市：广东广州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=53372" alt="乐华电视二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2ut7_iR0kpuFjSsppXXcGTXXa_!!1036020250.jpg" alt=" FmJXvubQS8Fo07xX2CkJg86D1535.jpg"/>
+				<div class="general-intro">
+				<h3>TCL微商城</h3>
+				<p>TCL唯一微信官方旗舰店，提供家电、3C数码、电器配件等产品，还有在线报修等服务，每周劲爆产品秒杀试用，惊喜不断！</p>
+				<p class="general-city">城市：广东 惠州</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=13811" alt="TCL二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li class="general-show"><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2xU2QkC8mpuFjSZFMXXaxpVXa_!!1036020250.jpg" alt=" FhfNnSficrMFdxwpLOcNASuJr7_h.jpg"/>
+				<div class="general-intro">
+				<h3>小狗吸尘器</h3>
+				<p>小狗电器专注清洁领域16年，中国吸尘器第一品牌，连续6年全网销量第一！</p>
+				<p class="general-city">城市：北京 北京</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=4987" alt="小狗吸尘器二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<div class="general-more">
+			<h2>更多</h2>
+			<ul class="clearfix general-list">
+				<li class="general-nav">
+					<ul class="clearfix">
+						<li><a href="##">VIP商户</a></li>
+						<li><a href="##">公益开店</a></li>
+						<li><a href="##">有赞商盟</a></li>
+						<li><a href="##">明星达人</a></li>
+						<li><a href="##">品牌商家</a></li>
+					</ul>
+				</li>
+				<li class="general-show">
+				<img src="https://img.alicdn.com/imgextra/i1/1036020250/TB2E1rYkxlmpuFjSZPfXXc9iXXa_!!1036020250.jpg" alt=" FuBzacDsPbgU_U8nHuYv3VAiG-bI.jpg"/>
+				<div class="general-intro">
+				<h3>千机网微商城</h3>
+				<p>千机网，是品胜股份战略投资的3C智能全产业服务平台。千机网采用本地化O2O运营模式，经营品类涵盖手机、3C配件、智能硬件等。</p>
+				<p class="general-city">城市：四川 成都</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=16243903" alt="千机网二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li  class="general-show"><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2ORzFkrlmpuFjSZFlXXbdQXXa_!!1036020250.jpg" alt=" FsL2AiFqLlvK3li4-zdH2f7YXHBW.jpg"/>
+				<div class="general-intro">
+				<h3>良品铺子手机商城</h3>
+				<p>一家集休闲食品研发、加工分装、零售服务</p>
+				<p class="general-city">城市：湖北 武汉</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=47999" alt="良品铺子二维码">
+					<p>扫码参观店铺</p>
+				</div>
+				</li>
+				<li class="general-show"><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2iOlci3JlpuFjSspjXXcT.pXa_!!1036020250.jpg" alt=" FpoQiZvNLhCn2oFhZbkeMLuIlmCT.jpg"/>
+				<div class="general-intro">
+				<h3>阿芙精油</h3>
+				<p>AFU阿芙，中国精油护肤第一品牌。一个有温度的公众号，每月四次为粉丝送芙利，申领人数均在5W+。</p>
+				<p class="general-city">城市：北京 北京</p>
+				</div>
+				<div class="general-image">
+					<img src="https://h5.youzan.com/v2/common/url/create?type=homepage&kdt_id=17" alt="阿芙精油二维码">
+					<p>扫码参观店铺</p>
+				</div></li>
+			</ul>
+			</div>
+			<a href="##" class="make-list">我要上榜</a>
+			</div>
+		</div>
+			<div class="contact clearfix">
+			<div class="layout">
+			<ul class="contact-list">
+				<ul>
+					<h2>关于有赞</h2>
+					<li><p><a href="##">关于有赞</a></p></li>
+					<li><p><a href="##">合作联系</a></p></li>
+					<li><p><a href="##">加入我们</a></p></li>
+					<li><p><a href="##">品牌资料包</a></p></li>
+				</ul>
+				<ul class="clearfix contact-service">
+					<h2>产品服务</h2>
+					<ul>
+						<li><p><a href="##">微商城</a></p></li>
+						<li><p><a href="##">有赞收银</a></p></li>
+						<li><p><a href="##">有赞批发</a></p></li>
+						<li><p><a href="##">服务市场</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">供货商</a></p></li>
+						<li><p><a href="##">微小店</a></p></li>
+						<li><p><a href="##">全员开店</a></p></li>
+						<li><p><a href="##">开放平台</a></p></li>
+					</ul>
+					<ul>
+						<li><p><a href="##">行业方案</a></p></li>
+						<li><p><a href="##">买家版</a></p></li>
+						<li><p><a href="##">消费保障</a></p></li>
+						<li><p><a href="##">公益开店</a></p></li>
+					</ul>
+				</ul>
+				<ul class="contact-consolut">
+					<h2>电话咨询</h2>
+					<li><p>开店咨询：0571 - 8522 5188</p></li>
+					<li><p>商家服务：0571 - 8998 8848</p></li>
+					<li class="service-time"><p>周一到周日 9:00 ~ 18:00</p></li>
+				</ul>
+				<ul class="contact-code">
+					<li><img src="https://b.yzcdn.cn/v2/image/intro/new_index/footer_qrcode.png" alt=" footer_qrcode.png"/></li>
+					<li class="code-service"><p>有赞服务指南</p></li>
+				</ul>
+				</ul>
+			</div>
+			</div>
+			</div>
+		<div id="footer">
+			2012-2017 © youzan.com -  <a href="##" class="footer-police"><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2Mldle80kpuFjy1XaXXaFkVXa_!!1036020250.png" alt=" 276d5f72dc85cc584d83c08fefa36c2b.png"/>浙公网安备 33010602004354号 </a>增值电信业务经营许可证：<a href="##">浙B2-20140331 - 浙ICP备13037466号</a>
+		</div>
+		<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+		<script src="../js/main.js"></script>
+		<script src="../js/protection.js"></script>
+		<script src="../js/case.js"></script>
+	</body>
+</html>

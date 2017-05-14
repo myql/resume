@@ -1,0 +1,533 @@
+html,body,ul,li,p,h1,h2,h3,h4{
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+    .layout {
+        width: 800px;
+    }
+}
+.layout {
+	width: 1116px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+* {
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 233341 */
+  src: url('http://at.alicdn.com/t/font_3oldmyg0qkmuc8fr.eot');
+  src: url('http://at.alicdn.com/t/font_3oldmyg0qkmuc8fr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_3oldmyg0qkmuc8fr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_3oldmyg0qkmuc8fr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_3oldmyg0qkmuc8fr.svg#iconfont') format('svg');
+}
+.iconfont{
+font-family: "iconfont";
+font-size: 14px;
+font-style: normal;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 99;
+	width: 100%;
+	height: 70px;
+	background: #ffffff;
+	font-family: Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	font-size: 14px;
+}
+#header a {
+	color: #2c3a46;
+	
+}
+
+#header .head-list>li {
+	float: left;
+}
+#header .head-title {
+	width: 132px;
+	height: 70px;
+	line-height: 110px;
+}
+#header .head-title img:hover {
+	background: blue;
+}
+#header .head-main>li {
+	float: left;
+	width: 116px;
+	height: 70px;
+	line-height:70px;
+	text-align: center;
+}
+#header .head-main li a:hover {
+	color: #ee0000;
+}
+#header .product {
+	position: relative;
+}
+#header .product-list {
+	position: absolute;
+	z-index: 22;
+	display: none;
+	width: 116px;
+	background: #ffffff;
+}
+#header .product-list li {
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+}
+#header .product-list li a{
+	color: #666666;
+}
+#header .product:hover .product-list {
+	display: block;
+}
+#header .head-login {
+	box-sizing: border-box;
+	width: 172px;
+}
+#header .head-login li {
+	margin: 20px 0;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #2b90ed;
+	border-radius: 3px;
+}
+#header .sign-in {
+		float:left;
+		cursor: pointer;
+    color: #2b90ed;
+}
+#header .sign-in:hover {
+	  background: #2b90ed;
+	  color: white;
+}
+#header .sign-up {
+		float:right;
+    cursor: pointer;
+		background: #2b90ed;
+    color: white;
+}
+#header .sign-up:hover {
+	opacity: 0.8;
+}
+#container  .content-list {
+	height: 484px;
+}
+#container  .content-list a {
+	color: white;
+}
+#container  .micro-mart .list-intro {
+	padding-top: 22px;
+}
+#container  .micro-mart .list-intro span {
+	top: 22px;
+}
+#container .list-details .micro-support .list-intro {
+	padding-bottom: 22px;
+}
+#container .list-details>li{
+	width: 190px;
+}
+#container .list-intro {
+	position: relative;
+	top: 51px;
+	z-index: 11;
+	float: left;
+	box-sizing: content-box;
+	width: 190px;
+	height: 55px;
+  line-height: 55px;
+	text-align: left;
+	background: rgba(31,55,67,0.8);
+	font-family: Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	font-size: 16px;
+}
+#container .list-intro span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+	width: 190px;
+  height: 55px;
+	cursor: pointer;
+}
+#container .list-intro a {
+	display: inline-block;
+	width: 190px;
+	box-sizing: border-box;
+	padding: 0 55px;
+}
+#container .list-details>li:hover span{
+	background: white;
+	opacity: 0.1;
+}
+#container .micro-mart .list-intro a{
+	background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB2ZNCUfd0opuFjSZFxXXaDNVXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-shop .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i2/1036020250/TB22RdpXdhvOuFjSZFBXXcZgFXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-silver .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i3/1036020250/TB2.894fipnpuFjSZFkXXc4ZpXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-wholesale .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i4/1036020250/TB2aCu5fm8mpuFjSZFMXXaxpVXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-program .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i3/1036020250/TB22t_gebXlpuFjy1zbXXb_qpXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-platform .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i2/1036020250/TB2waO7egNlpuFjy0FfXXX3CpXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-community .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i4/1036020250/TB2gmOUfdFopuFjSZFHXXbSlXXa_!!1036020250.png) no-repeat 20px;
+}
+#container .micro-support .list-intro a{
+	background:url(https://img.alicdn.com/imgextra/i2/1036020250/TB2gQ_nel8lpuFjy0FnXXcZyXXa_!!1036020250.png) no-repeat 20px;
+}
+
+#container  .mart-list {
+	position: absolute;
+	top: 72px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+	display: none;
+	box-sizing: border-box;
+  width: 100%; 
+	height: 484px;
+	background-size: 910px 484px;
+}
+/* #container  .mart-list .layout { */
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+/* } */
+#container  .mart-main {
+	margin-left: 260px;
+	margin-top: 110px;
+	width: 300px;
+}
+#container  .active {
+		display: block;
+}
+#container  .mart-main h1 {
+	font: normal 40px/32px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: white;
+	margin-bottom: 30px;
+}
+#container  .mart-main p {
+	font: normal 16px/32px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: white;
+}
+#container  .mart-main a {
+	display: inline-block;
+	width: 90px;
+	height: 32px;
+	line-height: 32px;
+	margin-right: 12px;
+	margin-top: 60px;
+	border: 1px solid white;
+	border-radius: 2px;
+	text-align: center;
+	cursor: pointer;
+	font: normal 14px/32px  Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container  .mart-main .list-second {
+	left: 120px;
+}
+#container  .list-support {
+	margin-top: 10px;
+}
+#container  .mart-main .list-first {
+	background: white;
+}
+#container .micro-mart .list-first {
+	color: #ea3838;
+}
+#container .micro-shop .list-first {
+	color: #1089c7;
+}
+#container .micro-silver .list-first {
+	color: #ff8f05;
+}
+#container .micro-wholesale  .list-first {
+	color: #ffbe00;
+}
+#container .micro-program .list-first {
+	color: #1bc972;
+}
+#container .micro-platform .list-first {
+	color: #1168cf;
+}
+#container .micro-community .list-first{
+	color: #ff1548;
+}
+#container .micro-support .list-first {
+	color: #461f7a;
+}
+/* #container  .mart-list a */
+#container .micro-mart .mart-list {
+	background:  #ea3838 url(https://img.alicdn.com/imgextra/i2/1036020250/TB29yQzemBjpuFjy1XdXXaooVXa_!!1036020250.jpg) no-repeat 200px 0;
+}
+#container .micro-shop .mart-list {
+	background: #1089c7 url(https://img.alicdn.com/imgextra/i3/1036020250/TB2bcEPfblmpuFjSZFlXXbdQXXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-silver .mart-list {
+	background: #ff8f05 url(https://img.alicdn.com/imgextra/i2/1036020250/TB2vf3Zem0jpuFjy0FlXXc0bpXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-wholesale .mart-list {
+	background: #ffbe00 url(https://img.alicdn.com/imgextra/i4/1036020250/TB2iJZ0ebplpuFjSspiXXcdfFXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-program .mart-list {
+	background: #1bc972 url(https://img.alicdn.com/imgextra/i2/1036020250/TB2c5Z2fhlmpuFjSZPfXXc9iXXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-platform .mart-list {
+	background: #1168cf url(https://img.alicdn.com/imgextra/i1/1036020250/TB2YmE7egJlpuFjSspjXXcT.pXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-community .mart-list {
+	background: #ff1548 url(https://img.alicdn.com/imgextra/i2/1036020250/TB2PBNceCFjpuFjSszhXXaBuVXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+#container .micro-support .mart-list {
+	background: #461f7a url(https://img.alicdn.com/imgextra/i2/1036020250/TB2NFkGelNkpuFjy0FaXXbRCVXa_!!1036020250.jpg) no-repeat 85% 0;
+}
+
+#container .solution {
+    margin-top: 100px;
+    text-align: center;
+}
+#container .solution-title{
+    font: 30px/30px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .solution-intro {
+    font: 16px/52px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .solution-list {
+    margin-top: 60px;
+    margin-left: -20px;
+}
+#container .solution-list li {
+    float: left;
+    box-sizing: border-box;
+    width: 260px;
+    height: 380px;
+    margin-left: 20px;
+    padding-top: 70px;
+}
+#container .solution-list h3 {
+    font: 20px/50px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .solution-list p {
+    font: 12px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+    color: #757574;
+}
+#container .solution-list a {
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    margin-top: 32px;
+    border-radius: 2px;
+    font: 14px/30px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .solution-list .list-store {
+    background: #f7ffee url(https://img.alicdn.com/imgextra/i3/1036020250/TB2xdD1eHRkpuFjSspmXXc.9XXa_!!1036020250.png) no-repeat center;
+}
+#container .solution-list .list-store a {
+    border: 1px solid #44bb00;
+    color: #44bb00;
+}
+#container .solution-list .list-ticket {
+    background: #f1fffc url(https://img.alicdn.com/imgextra/i1/1036020250/TB23V3ofUdnpuFjSZPhXXbChpXa_!!1036020250.png) no-repeat center;
+}
+#container .solution-list .list-ticket a {
+    border: 1px solid #45babc;
+    color: #45babc;
+}
+#container .solution-list .list-media {
+    background: #fff6f6 url(https://img.alicdn.com/imgextra/i1/1036020250/TB2YxD4fNtmpuFjSZFqXXbHFpXa_!!1036020250.png) no-repeat center;
+}
+#container .solution-list .list-media a {
+    border: 1px solid #ff6262;
+    color: #ff6262;
+}
+#container .solution-list .list-app {
+    background: #f3f9ff url(https://img.alicdn.com/imgextra/i1/1036020250/TB2sV6WeMFkpuFjSspnXXb4qFXa_!!1036020250.png) no-repeat center;
+}
+#container .solution-list .list-app a {
+    border: 1px solid #3672bc;
+    color: #3672bc;
+}
+#container .solution-list .list-hotel {
+    background: #fff6f0 url(https://img.alicdn.com/imgextra/i3/1036020250/TB2379HhEhnpuFjSZFEXXX0PFXa_!!1036020250.png) no-repeat center;
+}
+#container .solution-list .list-hotel a {
+    border: 1px solid #ff8d00;
+    color: #ff8d00;
+}
+#container .life {
+    margin-top: 70px;
+    text-align: center;
+}
+#container .life .life-list {
+    margin-left: -20px;
+}
+#container .life li {
+    float: left;
+    width: 120px;
+    height: 160px;
+    margin-left: 20px;
+}
+#container .life a {
+    display: block;
+    box-sizing: border-box;
+    width: 120px;
+    height: 160px;
+    padding: 30px;
+    font: 12px/14px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+    color: #666666;
+}
+#container .life a:hover {
+    background: #f8f8f8;
+}
+#container .life-list p {
+    margin-top: 30px;
+}
+#container .case {
+    margin-top: 70px;
+    text-align: center;
+}
+#container .case p {
+    margin-bottom: 70px;
+}
+#container .case li {
+    float: left;
+    width: 183px;
+    height: 120px;
+    text-align: center;
+}
+#container .case-more {
+    display: inline-block;
+    width:200px;
+    height: 44px;
+    font: 14px/44px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+    border: 1px solid #2b90ed;
+    border-radius: 2px;
+    color: #2b90ed;
+}
+#container .trends {
+    margin-top: 150px;
+    text-align: center;
+}
+#container .trends  li {
+	float: left;
+}
+#container .trends-list {
+	margin-top: 50px;
+	margin-right: -80px;
+	text-align: left;
+}
+#container .trends-list>li {
+	margin-right: 80px;
+}
+#container .trends,#container .trends a {
+	font: 12px/29px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: #6e6e6e;
+}
+#container .trends-list h3 {
+	font: bold 12px/40px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: #2c3a46;
+}
+#container .trends a:hover {
+	color: #e8121d;
+}
+#container .contact-list {
+	margin-top: 50px;
+	margin-right: -100px;
+}
+#container .contact {
+	width: 100%;
+	padding: 20px 0;
+	background: #fafafa;
+}
+#container .contact ul {
+	float: left;
+}
+#container .contact-list>ul {
+	margin-right: 100px;
+}
+#container .contact li {
+	height: 40px;
+	line-height: 40px;
+}
+#container .contact h2 {
+	font: 20px/50px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: #333333;
+}
+#container .contact a {
+	font: 14px/14px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: #666666;
+}
+#container .contact a:hover {
+		color: #e8121d;
+}
+#container .contact-service ul{
+	margin-right: 60px;
+}
+#container .contact-consolut li{
+	height: 60px;
+	line-height: 60px;
+	font: 20px/50px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	color: #666666;
+}
+#container .contact-consolut .service-time {
+	font-size: 12px;
+}
+#container .contact-code {
+	padding-top: 20px;
+}
+#container .code-service {
+	margin-top: 90px;
+	text-align: center;
+	color: #666666;
+	font: 14px/14px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#footer {
+
+	padding: 40px 0;
+	text-align: center;
+	font: 12px/22px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+	
+	color: #b6b6b6;
+}
+#footer .footer-police {
+	position: relative;
+	display: inline-block;
+	padding-left: 22px;
+}
+#footer .footer-police img{
+	position:absolute;
+	left: 0px;
+	top: 2px;
+}
+#footer a {
+	color: #b6b6b6;
+}

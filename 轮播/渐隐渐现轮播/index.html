@@ -1,0 +1,128 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>1</title>
+	<style>
+		html,body,ul,li {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+		}
+		a {
+			text-decoration: none;
+		}
+		.clearfix {
+			display: block;
+			content:' ';
+			clear: both;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.carousel {
+			position: relative;
+			width: 300px;
+			height:200px;
+			overflow: hidden;
+		}
+		.img-ct  {
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+		}
+		.img-ct li {
+			float: left;
+			width: 300px;
+			height:200px;
+		}
+		.carousel img {
+			width: 300px;
+			height: 200px;
+		}
+		.button {
+			position: absolute;
+			top: 100px;
+			margin-top: -15px;
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			background: #333;
+			color: white;
+			font: 18px/30px Arial;
+			text-align: center;
+		}
+		.button:hover {
+			opacity: 0.8;
+		}
+		.button-pre {
+			left :10px;
+		}
+		.button-next{
+			right:10px;
+		}
+		.bullet {
+			position: absolute;
+			bottom: 10px;
+			left: 150px;
+			margin-left: -68px;
+			cursor: pointer;
+		}
+		.bullet li {
+			float: left;
+			width: 30px;
+			height: 8px;
+			margin-right: 4px;
+			border-radius: 4px;
+			background: white;
+		}
+		.bullet .active {
+			background: #333;
+		}
+	</style>
+</head>
+<body>
+	<div class="carousel">
+		<ul class="img-ct">
+			<li><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2a1SAlrFlpuFjy0FgXXbRBVXa_!!1036020250.jpg" alt="图片1"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2c0WelrBkpuFjy1zkXXbSpFXa_!!1036020250.jpg" alt="图片2"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2CqyOlrVkpuFjSspcXXbSMVXa_!!1036020250.jpg" alt="图片3"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2JXjilCJjpuFjy0FdXXXmoFXa_!!1036020250.jpg" alt="图片4"></li>
+		</ul>
+		<a href="##" class="button button-pre"><</a>
+		<a href="##" class="button button-next">></a>
+		<ul class="bullet clearfix">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<div class="carousel">
+		<ul class="img-ct">
+			<li><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2a1SAlrFlpuFjy0FgXXbRBVXa_!!1036020250.jpg" alt="图片1"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i3/1036020250/TB2c0WelrBkpuFjy1zkXXbSpFXa_!!1036020250.jpg" alt="图片2"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i2/1036020250/TB2CqyOlrVkpuFjSspcXXbSMVXa_!!1036020250.jpg" alt="图片3"></li>
+			<li><img src="https://img.alicdn.com/imgextra/i4/1036020250/TB2JXjilCJjpuFjy0FdXXXmoFXa_!!1036020250.jpg" alt="图片4"></li>
+		</ul>
+		<a href="##" class="button button-pre"><</a>
+		<a href="##" class="button button-next">></a>
+		<ul class="bullet clearfix">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.js"></script>
+<script src="./fade.js"></script>
+<script>
+	 $('.carousel').eq(0).carousel(3000);
+	 $('.carousel').eq(1).carousel(6000);
+</script>
+</body>
+</html>

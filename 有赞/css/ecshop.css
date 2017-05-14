@@ -1,0 +1,61 @@
+			#container .ecshop .detail-list{
+				width: 30px;
+			}
+			#container .ecshop .logan-change {
+				padding-left: 86px;
+				background: url(https://img.alicdn.com/imgextra/i3/1036020250/TB2kPa5emFjpuFjSspbXXXagVXa_!!1036020250.png) no-repeat left center;
+				background-size: 55px 26px;
+			}
+			#container .ecshop .protection-details {
+				float: right;
+			}
+			#container .ecshop .protection-details {
+				margin-right: 20px;
+			}
+			#container .ecshop .protection-details li {
+				float: left;
+				margin-left: 33px;
+				margin-right: 0;
+			}
+			#container .ecshop .detail-faq .detail-list{
+				width: 60px;
+			}
+			#container .ecshop .detail-trial {
+				padding: 10px 0;
+			}
+			#container .ecshop .trial-link {
+				box-sizing: border-box;
+				width: 80px;
+				height: 30px;
+				line-height: 30px;
+				background: #ee0000;
+				color: white;
+				text-align :center;
+				border-radius: 2px;
+			}
+			#container .ecshop .trial-link:hover {
+				color: white;
+			}
+			#container .overview-more {
+				text-align: center;
+				margin-bottom: 90px;
+			}
+			#container  .overview-more>a {
+				display: inline-block;
+				width: 202px;
+				height: 46px;
+				margin-top: 80px;
+				margin-bottom: 35px;
+				background: #ee0000;
+				font: 16px/46px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;  
+				color: white;
+				border-radius: 4px;
+			}
+			#container  .overview-more h4 {
+				font: 16px/16px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;  
+				color: #333333;
+			}
+			#container  .overview-more p {
+				font: 14px/34px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;  
+				color: #b4b4b4;
+			}

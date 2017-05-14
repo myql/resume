@@ -1,0 +1,62 @@
+#header {
+    position: relative;
+    top: 0;
+    left: 50%;
+    tansform: translateX(-50%);
+    z-index: 11;
+}
+#container .protection-details {
+    float: right;
+    font: 14px/50px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .protection-details a {
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 50px;
+    color: #000000;
+}
+#container .protection-details a:hover {
+    border-bottom: 2px solid #ee0000;
+    color: #ee0000;
+}
+#container .protection-logan {
+    float: left;
+    font: 16px/50px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+}
+#container .protection-details li {
+    float: left;
+    box-sizing: border-box;
+    margin-right: 60px;
+    width: 60px;
+}
+#container .protection-title {
+    box-sizing: border-box;
+    width: 100%;
+    height: 350px;
+    background: #134bf5 url(https://img.alicdn.com/imgextra/i4/1036020250/TB2ZrO4hrBmpuFjSZFuXXaG_XXa_!!1036020250.jpg) no-repeat center center;
+    text-align: center;
+    padding: 100px 0;
+}
+#container .protection-title h1 {
+    font: 50px/90px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+    color: white;
+}
+#container .protection-title h3 {
+    font: 30px/70px Helvetica, "Pingfang SC", "Microsoft YaHei", STHeiti, Verdana, Arial, Tahoma, sans-serif;
+    color: white;
+}
+#container .protection-slogan {
+	width: 100%;
+	padding-bottom:1px;
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+#container .protection-fix {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	background: white;
+	margin: 0 auto;
+}
