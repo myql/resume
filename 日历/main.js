@@ -42,39 +42,76 @@ function playDate(year,month){
 	yearNumber.innerHTML=parseInt(year);
 	setDays(year);
 	var num=setMonthDays[setDate.getMonth()];
-	for(i=0;i<42;i++){
+	for(i=0;i<setWeek;i++){
 		dayList[i].innerHTML='';
-		dayList[i].style.backgroundColor= '#ccc';
+		dayList[i].onclick=function(){
+			shows.value='';
+			dayList[i].style.backgroundColor= '#29323f';
+		}
+		dayList[i].onmouseover=function(){
+		this.style.backgroundColor= '#29323f';
+		}
+		dayList[i].onmouseout=function(){
+			this.style.backgroundColor= '#29323f';
+		}	
 		
 	}
+for(i=(setWeek+num);i<42;i++){
+	dayList[i].innerHTML='';
+		dayList[i].onclick=function(){
+			shows.value='';
+		}
+	dayList[i].style.backgroundColor= '#29323f';
+		dayList[i].onmouseover=function(){
+		this.style.backgroundColor= '#29323f';
+		}
+		dayList[i].onmouseout=function(){
+			this.style.backgroundColor= '#29323f';
+		}
+}
 	for(i=setWeek;i<(setWeek+num);i++){
 	if(j<=num){
 		dayList[i].innerHTML=j;
-		
-		dayList[i].style.backgroundColor= '#999';
+		dayList[i].style.backgroundColor= '#29323f';
+		dayList[i].style.color= '#fff';
+		dayList[i].style.border= '1px solid #29323f'
 		dayList[i].onmouseover=function(){
-		this.style.backgroundColor= '#0099ff';
+		this.style.border= '1px solid #fcee6d';
+		this.style.color='#fff';
 		}
 		dayList[i].onmouseout=function(){
-			this.style.backgroundColor= '#999';
+			this.style.backgroundColor= '#29323f';
+			this.style.border= '1px solid #29323f';
+			this.style.color='#fff';
 		}	
+		
 	dayList[i].onclick=function(){
+		this.style.border= '1px solid #fcee6d';
+		this.style.color='#fff';
 		var clickYear=parseInt(year);
 		var clickMonth=parseInt(month+1);
 		var clickDay=parseInt(this.innerHTML);
 		shows.value=clickYear+'-'+clickMonth+'-'+clickDay;
 	}
-	dayList[setWeek+nowDay-1].style.backgroundColor='#0099ff';
+	dayList[setWeek+nowDay-1].style.backgroundColor='#fcee6d';
+	dayList[setWeek+nowDay-1].style.color='#29323f';
+	dayList[setWeek+nowDay-1].onmouseover=function(){
+			this.style.backgroundColor= '#fcee6d';
+			this.style.color= '#29323f';
+		}
+	dayList[setWeek+nowDay-1].onmouseout=function(){
+			this.style.backgroundColor= '#fcee6d';
+			this.style.color= '#29323f';
+		}
 	j++;	
 	}
 	}
 }
 
+
 function nowTime(){
 	playDate(nowYear,nowMonth-1);
-	dayList[nowWeek+nowDay].onmouseout=function(){
-			this.style.backgroundColor= '#0099ff';
-		}
+	
 		shows.value=nowYear+'-'+nowMonth+'-'+nowDay;
 }
 
@@ -157,17 +194,38 @@ clears.onclick=function(){
  c=0;
 	layouts.style.display=
 'none';
-	shows.onclick=function(){
+	shows.onclick=function(){	
 	nowTime();
 	shows.value='';
+		shows.value=nowYear+'-'+nowMonth+'-'+nowDay;
 	c++;
 	if(c%2===0){
 		layouts.style.display='none';
+		shows.value='';
 	}else {
 		layouts.style.display='block';
 	}
 }
+var dateChoice=document.getElementsByClassName('date-choice')[0];
+function hasClass(el,name){
+	if(el.className.indexOf(name)>-1){
+		return true;
+	}else {
+		return false;
+	}
+}
+function addClass(el,name){
+	if(!hasClass){
+		if(el.className.indexOf(name)==-1){
+		el.className=el.className+' '+name;
+	}
+	}
+}
+function removeClass(el,name){
+	if(hasClass){
+		el.className=el.className-name;
+	}
+}
 
-	
 
 
