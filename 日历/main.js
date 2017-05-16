@@ -86,12 +86,11 @@ for(i=(setWeek+num);i<42;i++){
 		}	
 		
 	dayList[i].onclick=function(){
-		this.style.border= '1px solid #fcee6d';
-		this.style.color='#fff';
 		var clickYear=parseInt(year);
 		var clickMonth=parseInt(month+1);
 		var clickDay=parseInt(this.innerHTML);
 		shows.value=clickYear+'-'+clickMonth+'-'+clickDay;
+		layouts.style.display="none"
 	}
 	dayList[setWeek+nowDay-1].style.backgroundColor='#fcee6d';
 	dayList[setWeek+nowDay-1].style.color='#29323f';
@@ -110,9 +109,8 @@ for(i=(setWeek+num);i<42;i++){
 
 
 function nowTime(){
-	playDate(nowYear,nowMonth-1);
-	
-		shows.value=nowYear+'-'+nowMonth+'-'+nowDay;
+	playDate(nowYear,nowMonth-1);	
+shows.value=nowYear+'-'+nowMonth+'-'+nowDay;
 }
 
 function isLeapYear(year){
@@ -190,16 +188,11 @@ nowTimes.onclick=function(){
 clears.onclick=function(){
 	shows.value='';
 }
- var c;
- c=0;
 	layouts.style.display=
 'none';
 	shows.onclick=function(){	
-	nowTime();
-	shows.value='';
-		shows.value=nowYear+'-'+nowMonth+'-'+nowDay;
-	c++;
-	if(c%2===0){
+	playDate(nowYear,nowMonth-1);
+	if(layouts.style.display=='block'){
 		layouts.style.display='none';
 		shows.value='';
 	}else {
@@ -215,15 +208,17 @@ function hasClass(el,name){
 	}
 }
 function addClass(el,name){
-	if(!hasClass){
+	if(!hasClass(el,name)){
 		if(el.className.indexOf(name)==-1){
 		el.className=el.className+' '+name;
 	}
 	}
 }
 function removeClass(el,name){
-	if(hasClass){
-		el.className=el.className-name;
+	if(hasClass(el,name)){
+		var reg="/^"+name+"$/g";
+		console.log(eval(reg));
+		el.className=el.className.replace(eval(reg),'');
 	}
 }
 
