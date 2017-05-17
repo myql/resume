@@ -150,6 +150,7 @@ font-style: normal;
 	position: relative;
 	top: 51px;
 	z-index: 11;
+	width :100%;
 	float: left;
 	box-sizing: content-box;
 	width: 190px;
