@@ -1,3 +1,20 @@
+if(!document.getElementsByClassName){ 
+document.getElementsByClassName = function(className, element){ 
+var children = (element || document).getElementsByTagName('*'); 
+var elements = new Array(); 
+for (var i=0; i<children.length; i++){ 
+var child = children[i]; 
+var classNames = child.className.split(' '); 
+for (var j=0; j<classNames.length; j++){ 
+if (classNames[j] == className){ 
+elements.push(child); 
+break; 
+} 
+} 
+} 
+return elements; 
+}; 
+}
 var shows=document.getElementsByClassName('show')[0],
 yearPre=document.getElementsByClassName('year-pre')[0],
 yearNext=document.getElementsByClassName('year-next')[0],
@@ -94,13 +111,16 @@ for(i=(setWeek+num);i<42;i++){
 	}
 	dayList[setWeek+nowDay-1].style.backgroundColor='#fcee6d';
 	dayList[setWeek+nowDay-1].style.color='#29323f';
+	dayList[setWeek+nowDay-1].style.border= 'none';
 	dayList[setWeek+nowDay-1].onmouseover=function(){
 			this.style.backgroundColor= '#fcee6d';
 			this.style.color= '#29323f';
+			this.style.border= 'none';
 		}
 	dayList[setWeek+nowDay-1].onmouseout=function(){
 			this.style.backgroundColor= '#fcee6d';
 			this.style.color= '#29323f';
+			this.style.border= 'none';
 		}
 	j++;	
 	}
