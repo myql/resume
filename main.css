@@ -116,7 +116,7 @@
 		display: none;
 	}
 	.header-list {
-		background: rgba(0,0,0,0.5);
+		/* background: rgba(0,0,0,0.5); */
 		height: 100%;
 	}
 	.header-list li {
@@ -125,7 +125,9 @@
 	.header-list li a {
 		color: white;
 	}
-	
+	.main-project {
+		height: 80%;
+	}
 	.rows {
 		position: absolute;
 		left: 150px;
@@ -143,18 +145,21 @@
 	}
 	.main-project>div {
 		position: relative;
-		margin-top: 20px;
+		height: 45%;
+		margin-top: 40px;
 		padding-left: 1px;
 		font-size: 0;
 		border: 1px solid #fff;
 	}
 	#section-1 a.image-show {
+		position: relative;
 		display: inline-block;
 		width: 100%;		
+		height: 100%;
 	}
 	#section-1  a.image-show img{
 		width: 100%;
-		height: 200px;
+		height: 100%;
 	}
 	.main-project>div .cover {
 		position: absolute;
@@ -274,7 +279,7 @@
 		width: 65%;
 	}
 	.skills-des {
-			/* padding-top: 50px; */
+			padding-top: 50px;
 			background: black;
 			color: white;
 	}
