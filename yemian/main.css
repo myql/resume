@@ -86,7 +86,7 @@ header {
 	position: relative;
 	width: 100%;
 	height: 900px;
-	background: url(images/header-bg.jpg) no-repeat;
+	background: url(https://img.alicdn.com/imgextra/i4/1036020250/TB21BazvJFopuFjSZFHXXbSlXXa_!!1036020250.jpg) no-repeat;
 	background-size: cover;
 }
 .header-content {
@@ -278,7 +278,7 @@ header {
 	transform: translateX(-50%);
 	z-index:-1;
 	border-radius: 50%;
-	background: #ccc;
+	background: #f1f1f1;
 }
 .background-1 {
 	top: 0;
@@ -367,7 +367,7 @@ header {
 	right: 0;
 	text-align: left;
 }
-#team {
+#team .content{
 	background: #eee;
 	padding-bottom: 165px;
 }

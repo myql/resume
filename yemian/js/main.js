@@ -10,8 +10,7 @@ var windowTop=$(window).scrollTop();
 if((windowTop)>10){
 		$navbar.css({
 		background: '#222'
-	})	
-
+	})
 	}else {
 		$navbar.css({
 		background: 'none'
@@ -52,9 +51,5 @@ $(window).scroll(function(){
 	}
 	
 }
-})
-
-$navbarNav.children().on('click',function(){
-	
 })
 
