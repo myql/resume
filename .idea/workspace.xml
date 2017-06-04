@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a38e270-6ad1-418c-b8cd-cc9fec638c25" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yemian/index.html" afterPath="$PROJECT_DIR$/yemian/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yemian/js/main.js" afterPath="$PROJECT_DIR$/yemian/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yemian/main.css" afterPath="$PROJECT_DIR$/yemian/main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yemian/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
+            <state relative-caret-position="3061">
               <caret line="280" column="23" lean-forward="false" selection-start-line="280" selection-start-column="23" selection-end-line="280" selection-end-column="23" />
               <folding />
             </state>
@@ -55,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yemian/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="192">
+              <caret line="6" column="107" lean-forward="false" selection-start-line="6" selection-start-column="107" selection-end-line="6" selection-end-column="107" />
               <folding />
             </state>
           </provider>
@@ -89,6 +87,7 @@
       <find>padding-bottom</find>
       <find>header</find>
       <find>url</find>
+      <find>#ccc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -100,6 +99,7 @@
         <option value="$PROJECT_DIR$/yemian/js/main.js" />
         <option value="$PROJECT_DIR$/yemian/bootstrap-carousel.html" />
         <option value="$PROJECT_DIR$/yemian/main.css" />
+        <option value="$PROJECT_DIR$/yemian/index.html" />
       </list>
     </option>
   </component>
@@ -256,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1496582062279</updated>
-      <workItem from="1496582067537" duration="1698000" />
+      <workItem from="1496582067537" duration="1784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1698000" />
+    <option name="totallyTimeSpent" value="1784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -320,18 +320,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yemian/index.html">
+    <entry file="file://$PROJECT_DIR$/yemian/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="3061">
+          <caret line="280" column="23" lean-forward="false" selection-start-line="280" selection-start-column="23" selection-end-line="280" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yemian/main.css">
+    <entry file="file://$PROJECT_DIR$/yemian/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="280" column="23" lean-forward="false" selection-start-line="280" selection-start-column="23" selection-end-line="280" selection-end-column="23" />
+        <state relative-caret-position="192">
+          <caret line="6" column="107" lean-forward="false" selection-start-line="6" selection-start-column="107" selection-end-line="6" selection-end-column="107" />
           <folding />
         </state>
       </provider>
