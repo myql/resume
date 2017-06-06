@@ -725,3 +725,8 @@ header {
 	padding: 40px 30px;
 }
 	}
+.info p{
+		position: relative;
+		z-index: 22;
+		color: #f0f;
+	}
